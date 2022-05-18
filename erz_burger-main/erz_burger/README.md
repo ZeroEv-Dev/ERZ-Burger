@@ -32,6 +32,7 @@ SE USI OX_INVENTORY:
 		label = 'Lattuga Sporca',
 		weight = 150,
 	},
+}
 
 	['carne'] = {
 		label = 'Carne Cotta',
