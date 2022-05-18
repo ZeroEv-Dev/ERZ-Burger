@@ -116,8 +116,6 @@ Citizen.CreateThread(function()
             DrawMarker(2, Config.Vendere.x, Config.Vendere.y, Config.Vendere.z -0.2, 0, 0, 0, 0, 0, 0, 0.3, 0.3, 0.3, 0, 90, 0, 255, 0, 0, 2, 1, 0, 0, 0)
             if IsControlJustPressed(0, 38) then
                 SetNewWaypoint(Config.NPCTesto.x, Config.NPCTesto.y, Config.NPCTesto.z)
-                --exports['mythic_notify']:SendAlert('inform', 'Punto di consegna segnato sulla Mappa', 5000)
-                --ESX.ShowNotification('Ottimo')
             end
         end
         Citizen.Wait(aspetta)
@@ -142,7 +140,7 @@ Citizen.CreateThread(function()
     end
 end)
 
--- NPC KISMI
+-- NPC
 Citizen.CreateThread(function()
     if Config.NPCAttivo == true then
         RequestModel(Config.NPCModello)
